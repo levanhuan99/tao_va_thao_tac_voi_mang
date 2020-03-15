@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="text"/>
+<button id="add" onclick="add()" value="add">Add</button>
+<button id="display" onclick="display()" value="display">Display</button><br/>
+<div id="result"></div>
+<script>
+
+    let x=0;
+    let array=Array();
+    function add() {
+        array[x]=document.getElementById("text").value;
+
+        alert("ban vua them phan tu "+array[x]+"vi tri"+x);
+        x++;
+        document.getElementById("text").value=" ";
+
+    }
+    function display() {
+        let a="";
+        for (i=0;i<array.length;i++){
+            a+="element"+" "+i+"="+array[i]+"<br/>";
+        }
+        document.getElementById("result").innerHTML=a;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
